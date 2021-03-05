@@ -1,0 +1,61 @@
+{
+  "description": "Customer profile features",
+  "features": [
+    {
+      "name": "cid",
+      "type": "bigint",
+      "description": "Customer ID (Unique)"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Name of the customer"
+    },
+    {
+      "name": "age",
+      "type": "bigint",
+      "description": "Age of the customer"
+    },
+    {
+      "name": "marital_status",
+      "type": "string",
+      "description": "Marital status of the customer - married or single"
+    },
+    {
+      "name": "sex",
+      "type": "string",
+      "description": "Sex of the customer"
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "description": "Current city in US"
+    },
+    {
+      "name": "state",
+      "type": "string",
+      "description": "Current state in US"
+    },
+    {
+      "name": "created_at",
+      "type": "double",
+      "description": "Required feature for event time"
+    }   
+  ],
+  "record_identifier_feature_name": "cid",
+  "event_time_feature_name": "created_at",
+  "tags": [
+    {
+      "Key": "Environment",
+      "Value": "DEV"
+    },
+    {
+      "Key": "IngestionType",
+      "Value": "Batch"
+    },
+    {
+      "Key": "CostCenter",
+      "Value": "C18"
+    }
+  ]
+}

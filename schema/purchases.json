@@ -1,0 +1,56 @@
+{
+  "description": "Customer purchases features",
+  "features": [
+    {
+      "name": "pid",
+      "type": "bigint",
+      "description": "Purchase ID (Unique)"
+    },
+    {
+      "name": "cid",
+      "type": "bigint",
+      "description": "Customer ID (Unique)"
+    },
+    {
+      "name": "product_name",
+      "type": "string",
+      "description": "Name of the product"
+    },
+    {
+      "name": "purchase_amount",
+      "type": "double",
+      "description": "Price of the product"
+    },
+    {
+      "name": "product_category",
+      "type": "string",
+      "description": "Product category"
+    },
+    {
+      "name": "purchased_at",
+      "type": "string",
+      "description": "Time of purchase"
+    },
+    {
+      "name": "created_at",
+      "type": "double",
+      "description": "Required feature for event time"
+    }   
+  ],
+  "record_identifier_feature_name": "pid",
+  "event_time_feature_name": "created_at",
+  "tags": [
+    {
+      "Key": "Environment",
+      "Value": "PROD"
+    },
+    {
+      "Key": "IngestionType",
+      "Value": "Stream"
+    },
+    {
+      "Key": "CostCenter",
+      "Value": "C19"
+    }
+  ]
+}
