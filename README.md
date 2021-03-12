@@ -62,7 +62,7 @@ Additionally, you need to create and attach a custom policy as shown below:
         "s3:PutObject"
       ],
       "Resource": [
-        "arn:aws:s3:::<ATHENA RESULTS BUCKET NAME IN ACCOUNT A>/",
+        "arn:aws:s3:::<ATHENA RESULTS BUCKET NAME IN ACCOUNT A>/*",
         "arn:aws:s3:::<ATHENA RESULTS BUCKET NAME IN ACCOUNT A>"
       ]
     }
@@ -127,7 +127,7 @@ We need to create and attach two custom policies in addition to the default ones
         "s3:GetObjectAcl"
       ],
       "Resource": [
-        "arn:aws:s3:::<OFFLINE STORE BUCKET NAME IN ACCOUNT B>/",
+        "arn:aws:s3:::<OFFLINE STORE BUCKET NAME IN ACCOUNT B>/*",
         "arn:aws:s3:::<OFFLINE STORE BUCKET NAME IN ACCOUNT B>"
       ]
     }
